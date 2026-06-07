@@ -15,7 +15,7 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: auto;
-    padding: 80px 0
+    padding: 33px 0
 }
 
 .nav {
@@ -63,7 +63,7 @@ nav a {
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 55px;
     margin-bottom: 20px
 }
 
