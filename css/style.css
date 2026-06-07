@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    background: #0b1120;
+    color: #fff;
+    line-height: 1.6
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 0
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: #0b1120cc;
+    backdrop-filter: blur(10px)
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px
+}
+
+.logo {
+    width: 281px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.hero {
+    background: radial-gradient(circle at 20% 20%, #d4af37 0%, transparent 20%), radial-gradient(circle at 80% 20%, #4f46e5 0%, transparent 25%), #0b1120
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center
+}
+
+.hero img,
+.project img {
+    width: 100%;
+    border-radius: 20px
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 20px
+}
+
+.btn {
+    display: inline-block;
+    background: #d4af37;
+    color: #000;
+    padding: 14px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none
+}
+
+.cards,
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px
+}
+
+.card,
+.project,
+.faq-item {
+    background: #172033;
+    padding: 24px;
+    border-radius: 16px
+}
+
+.answer {
+    display: none;
+    padding-top: 10px
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none
+}
+
+@media(max-width:768px) {
+    .hero-grid {
+        grid-template-columns: 1fr
+    }
+
+    h1 {
+        font-size: 42px
+    }
+}
