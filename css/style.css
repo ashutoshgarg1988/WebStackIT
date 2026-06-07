@@ -114,3 +114,13 @@ textarea {
         font-size: 42px
     }
 }
+.carousel{overflow:hidden}.track{display:flex;gap:20px;width:max-content;animation:scroll 25s linear infinite}
+.track .card{min-width:240px}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.faq-item{margin-bottom:15px;border:1px solid rgba(255,255,255,.08)}
+.faq-item button{width:100%;background:none;color:#fff;border:none;text-align:left;font-size:18px;padding:10px;cursor:pointer}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.contact-info{background:#172033;padding:30px;border-radius:16px}
+.contact-info ul{padding-left:20px}
+.logo{height:70px;width:auto}
+@media(max-width:768px){.contact-grid{grid-template-columns:1fr}}
