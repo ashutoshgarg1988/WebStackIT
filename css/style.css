@@ -114,13 +114,148 @@ textarea {
         font-size: 42px
     }
 }
-.carousel{overflow:hidden}.track{display:flex;gap:20px;width:max-content;animation:scroll 25s linear infinite}
-.track .card{min-width:240px}
-@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.faq-item{margin-bottom:15px;border:1px solid rgba(255,255,255,.08)}
-.faq-item button{width:100%;background:none;color:#fff;border:none;text-align:left;font-size:18px;padding:10px;cursor:pointer}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
-.contact-info{background:#172033;padding:30px;border-radius:16px}
-.contact-info ul{padding-left:20px}
-.logo{height:70px;width:auto}
-@media(max-width:768px){.contact-grid{grid-template-columns:1fr}}
+
+.carousel {
+    overflow: hidden
+}
+
+.track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll 25s linear infinite
+}
+
+.track .card {
+    min-width: 240px
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(-50%)
+    }
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, .08)
+}
+
+.faq-item button {
+    width: 100%;
+    background: none;
+    color: #fff;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start
+}
+
+.contact-info {
+    background: #172033;
+    padding: 30px;
+    border-radius: 16px
+}
+
+.contact-info ul {
+    padding-left: 20px
+}
+
+
+@media(max-width:768px) {
+    .contact-grid {
+        grid-template-columns: 1fr
+    }
+}
+
+.services-carousel {
+    padding: 80px 5%;
+    overflow: hidden
+}
+
+.services-carousel h2 {
+    text-align: center;
+    margin-bottom: 30px
+}
+
+.carousel-track {
+    display: flex;
+    gap: 24px;
+    width: max-content;
+    animation: scroll 30s linear infinite
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(-50%)
+    }
+}
+
+.service-card {
+    width: 320px;
+    background: #172033;
+    border-radius: 18px;
+    overflow: hidden
+}
+
+.service-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: .5s
+}
+
+.service-card:hover img {
+    transform: scale(1.08)
+}
+
+.service-card h3 {
+    padding: 16px
+}
+
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px
+}
+
+.carousel-viewport {
+    overflow: hidden;
+    flex: 1
+}
+
+.carousel-track {
+    display: flex;
+    gap: 24px;
+    transition: transform .4s ease
+}
+
+.carousel-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #d4af37;
+    font-size: 24px
+}
+
+.service-card {
+    min-width: 320px
+}
